@@ -12,7 +12,7 @@ public class Target : MonoBehaviour
     {
         if (transform.position == _waypoints[_currentWaypoint].position)
         {
-            _currentWaypoint = (_currentWaypoint + 1) % _waypoints.Length;
+            _currentWaypoint = ++_currentWaypoint % _waypoints.Length;
         }
 
         transform.position = Vector3.MoveTowards(transform.position, _waypoints[_currentWaypoint].position, _moveSpeed * Time.deltaTime);        

@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
 
     public event Action<Enemy> Died;
 
-    public Vector3 StartPosition => _startPosition;
+    public Vector3 StartPosition => _startPosition;    
 
     public void Initialize(Target target, Vector3 spawnPointPosition)
     {

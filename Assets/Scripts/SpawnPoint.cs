@@ -6,5 +6,5 @@ public class SpawnPoint : MonoBehaviour
     [SerializeField] private Target _targetPrefab;
 
     public Enemy Enemy => _enemyPrefab;
-    public Target Target => _targetPrefab;  
+    public Target Target => _targetPrefab;
 }
